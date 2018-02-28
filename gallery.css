@@ -1,0 +1,138 @@
+/**
+Group B
+gallery.css
+**/
+
+div.container {
+    width: 100%;
+    border: 1px black;
+}
+
+header, footer {
+    padding: 1em;
+    clear: left;
+    text-align: center;
+    background-color: #FFDAB9;
+}
+
+.page-header{
+  text-align: center;
+  margin: auto;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+    background-color: #1F2B9D;
+    color: white;
+}
+
+input[type=text] {
+       width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 45%;
+}
+
+.search {
+  float: right;
+}
+
+body {
+    margin: 0;
+    min-height: 100%;
+    
+}
+
+.title {
+  font-family: impact;
+}
+
+h1 {
+  font-family: arial;
+}
+
+h2
+{
+  font-weight: bold;
+  text-align: center;
+}
+
+#gallery
+{
+  display: table;
+  margin:auto;
+  width: 1000px;
+
+}
+
+.row
+{
+  display: table-row;
+  
+
+}
+
+.pic
+{
+  width: 300px;
+}
+
+.character
+{
+  width: 200px;
+  
+}
+
+table
+{
+  margin: auto;
+}
+
+.cell
+{
+  display: table-cell;
+  vertical-align: middle;
+  text-align:center;
+  margin:center;
+  border: 1pt;
+
+}
+
+caption
+{
+  font-weight: bolder;
+  font-size: 13pt;
+}
+

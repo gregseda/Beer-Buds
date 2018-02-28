@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+Diego Yanez
+CIS 444
+10/24/17
+
+WEB Pages Project: Craft
+-->
+<html lang = "eng">
+<header>
+<meta charset = "utf-8" />
+<title>Craft Beer</title>
+
+<link rel = "stylesheet" type = "text/css" href = "craftFont.css" />
+<script type = "text/javascript" src = "craftFunc.js"></script>
+
+</header>
+<h1><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTudmqgPLcstgPENFzbTil71xx3i4A-uQI1JSdbTeTecpL3OEn0_g" height=100 align="center" border="3"> Craft</h1>
+<div class="topnav">
+<a class="active" href="http://cis444.cs.csusm.edu/group_B/home3.html">Home</a>
+<a href="http://cis444.cs.csusm.edu/group_B/blog.html">Blogs</a>
+<a href="http://cis444.cs.csusm.edu/group_B/gallery.html">Gallery</a>
+<a href="http://cis444.cs.csusm.edu/group_B/0LogIn.html">Log In</a>
+<a href="http://cis444.cs.csusm.edu/group_B/SearchPage.html">Back to Search...</a>
+  <form align="right">
+
+</form>
+</div>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="#">The Lost Abbey</a></li>
+  <li><a href="#">Samuel Adams Utopias</a></li>
+  <li><a href="#">Lagunitas IPA</a></li>
+  <li><a href="#">Stone IPA</a></li>
+  <li><a href="#">AleSmith Horny Devil</a></li>
+  <li><a href="#">Sam Adams Boston Lager</a></li>
+</ul>
+
+
+
+</body>
+</html>

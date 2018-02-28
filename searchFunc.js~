@@ -1,0 +1,42 @@
+<script>
+
+function mySearch() 
+{
+    var input = document.getElementById('value').value;
+    if (input == 'lager') 
+    {
+        window.location.assign('http://cis444.cs.csusm.edu/group_B/lager.php');
+    }
+    else 
+    {
+        alert("try again");
+        document.getElementById('error').innerHTML = "try again";
+    }
+}
+
+
+/*
+function mySearch() {
+    // Declare variables
+    var input, filter, ul, li, a, i;
+    input = document.getElementById('myInput');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName('li');
+
+if(input == "lager")
+{
+window.location.assign('http://cis444.cs.csusm.edu/group_B/lager.php');
+}
+/*
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+*/
+</script>

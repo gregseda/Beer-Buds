@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+Diego Yanez
+CIS 444
+10/24/17
+
+WEB Pages Project: Mexican
+--><html lang = "eng">
+<header>
+<meta charset = "utf-8" />
+<title>Mexican Beer</title>
+
+<link rel = "stylesheet" type = "text/css" href = "mexicanFont.css" />
+<script type = "text/javascript" src = "mexicanFunc.js"></script>
+
+
+</header>
+<body>
+
+<h1> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTudmqgPLcstgPENFzbTil71xx3i4A-uQI1JSdbTeTecpL3OEn0_g" height=100 align="center" border="3"> Mexican</h1>
+<div class="topnav">
+<a class="active" href="http://cis444.cs.csusm.edu/group_B/home3.html">Home</a>
+<a href="http://cis444.cs.csusm.edu/group_B/blog.html">Blogs</a>
+<a href="http://cis444.cs.csusm.edu/group_B/gallery.html">Gallery</a>
+<a href="http://cis444.cs.csusm.edu/group_B/0LogIn.html">Log In</a>
+<a href="http://cis444.cs.csusm.edu/group_B/SearchPage.html">Back to Search...</a>
+  <form align="right">
+
+</form>
+</div>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="#">Corona</a></li>
+  <li><a href="#">Sol</a></li>
+  <li><a href="#">Pacifico</a></li>
+  <li><a href="#">Modelo</a></li>
+  <li><a href="#">Tecate</a></li>
+  <li><a href="#">Victoria</a></li>
+</ul>
+
+</body>
+</html>

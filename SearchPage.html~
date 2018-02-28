@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang = "eng">
+<head>
+  <meta charset = "utf-8" />
+  <title>Beer Buds Search</title>
+
+  <link rel = "stylesheet" type = "text/css" href = "searchFont.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script type = "text/javascript" src = "searchFunc.js"></script>
+
+</head>
+
+<body>
+
+  <div class="page-header">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTudmqgPLcstgPENFzbTil71xx3i4A-uQI1JSdbTeTecpL3OEn0_g" alt="beer">
+    <h1>Beer Search</h1>
+  </div>
+  
+
+  
+    <!-- Here is the navbar at the top, right below the header-->
+  <div class="topnav">
+  <a href="home3.html">Home</a>
+  <a href="blog.html">Blogs</a>
+  <a href="gallery.html">Gallery</a>
+  <a class = "active" href="SearchPage.html">Search</a>
+  <a href="0LogIn.php">Log In</a>
+  <a href="0LogOut.php">Log Out</a>
+<!--
+  <form align="right">
+<!--
+<input type="text" name="search" placeholder="Search..">
+    </form>
+-->
+	</div>
+
+<h2>Search for beers by name: </h2>
+<form align"right">
+<input type = "text" id = "myInput" onkeyup="mySearch()" placeholder = "Search for something... ">
+</label> -->Press ENTER when done typing.
+<!--<button onclick = "myFunction()">Submit!</button>
+<p id = "demo"></p>
+-->
+</form>
+<h3>Or click a category to view the inventory for each.</h3>
+<ul id = "myUL">
+  <li><a href="lager.html">Lagers</a></li>
+  <li><a href="ale.html">Ales</a></li>
+ <!-- <li><a href="Mexican.html">Mexican</a></li>
+-->
+</ul>
+
+</body>
+</html>

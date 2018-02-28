@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CreateBlogSave </title>
+  </head>
+  <body>
+
+<?php
+session_start();
+ if(isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true)
+ {
+
+  $db = mysqli_connect("localhost","group_b","dlnRGGrS9fsyC9qA");
+  if (!$db) // Check connection if statement
+    {
+      echo "fail";exit;
+    }
+
+  $group_b = mysqli_select_db($db, "group_b");
+  if (!$group_b)//if statement checks the database selected
+    {
+      print "error";exit;
+    }
+    echo "connnected to database";
+
+//   $userid = $_SESSION["userid"];
+   echo "UserID" . $userid . " read";
+   // removed $userid condition
+    if (isset($_SESSION["logged_in"]))
+    {             
+               // retrieve user info to save blog to database
+    $username = $_SESSION["username"];
+    $userquery = "SELECT userid FROM users WHERE username='$username'";
+    $userresult = mysqli_query($db,$userquery);
+
+
+
+                $blogBody = $_POST["Blog"];
+		$Title = $_POST["Title"];
+		$Tag = $_POST["Tags"];
+                $blogDate = $_POST['sysdate()'];
+		echo "Query result";
+		$query = "INSERT INTO blogs(userid,blogBody, Title, Tag, blogDate) VALUES('$userresult','$blogBody','$Title','$Tag',sysdate())";
+		
+                echo $query;
+		$Qresult = mysqli_query($db,$query);
+                if($Qresult)
+		{
+			echo "added entry";
+			header("Location: blog.php");
+		}
+		else
+		{
+			echo "Failed to Save Blog";
+		}
+	}
+ }
+ else
+ {
+ echo "Must Be Logged In";
+ }
+  ?>
+
+</body>
+  <br />
+  <br />
+
+<!-- <meta http-equiv="refresh" content="0; URL='http://cis444.cs.csusm.edu/group_B/0LogIn.php'"/> -->
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+Diego Yanez
+CIS 444
+10/24/17
+
+WEB Pages Project: American
+-->
+<html lang = "eng">
+<header>
+<meta charset = "utf-8" />
+<title>American Beer</title>
+
+<link rel = "stylesheet" type = "text/css" href = "americanFont.css" />
+<script type = "text/javascript" src = "americanFunc.js"></script>
+
+
+</header>
+<body>
+
+<h1> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTudmqgPLcstgPENFzbTil71xx3i4A-uQI1JSdbTeTecpL3OEn0_g" height=100 align="center" border="3"> American</h1>
+<div class="topnav">
+<a class="active" href="http://cis444.cs.csusm.edu/group_B/home3.html">Home</a>
+<a href="http://cis444.cs.csusm.edu/group_B/blog.html">Blogs</a>
+<a href="http://cis444.cs.csusm.edu/group_B/gallery.html">Gallery</a>
+<a href="http://cis444.cs.csusm.edu/group_B/0LogIn.html">Log In</a>
+<a href="http://cis444.cs.csusm.edu/group_B/SearchPage.html">Back to Search...</a>
+  <form align="right">
+
+</form>
+</div>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="#">Budweiser</a></li>
+  <li><a href="#">BudLight</a></li>
+  <li><a href="#">MillerLight</a></li>
+  <li><a href="#">CoorsLight</a></li>
+  <li><a href="#">Miller</a></li>
+  <li><a href="#">Coors</a></li>
+</ul>
+
+</body>
+</html>
